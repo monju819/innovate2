@@ -1,0 +1,551 @@
+
+/* **************** 
+
+          fonts
+
+
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Nunito', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+
+-Light 300
+-Regular 400
+-Medium 500
+-SemiBold 600
+-Bold 700
+-ExtraBold 800
+
+******************* */
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+ nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+   top: 0;
+   left: 0;
+
+
+} 
+ nav .box{
+    display: flex;
+   
+}
+
+ nav .logo{
+    width: 20%;
+   
+}
+ nav .nav-item{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   
+}
+nav .nav-item ul{
+    display: flex;
+    
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav .nav-item ul i{
+    margin-left: 8px;
+}
+ nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: #fff;
+
+}
+.banner{
+    background: url(../img/banner.png);
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 771px;
+    color: #29313D;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+
+}
+.banner p{
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 200%;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+
+}
+.banner .button{
+    text-align: center;
+}
+.banner .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: #fff;
+    margin: 0 12px;
+    transition: 1s;
+    
+
+}
+.banner .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    box-shadow: inset 0 0 0 1px #FF5538;
+}
+.banner .round-shap{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 790px;
+    animation: rotete 4s infinite linear;
+
+}
+@keyframes rotete{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.banner .round-shap .inner-shap{
+    width: 20px;
+    height: 20px;
+    background: #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+
+.banner .dot{
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 700px;
+    animation: tb 4s infinite linear alternate;
+}
+@keyframes tb{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+.banner .cross{  
+    color: #C087EE;
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    animation: rotete 4s infinite linear;
+}
+.banner .crosstwo{  
+    color: #C087EE;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    animation: rotete 4s infinite linear;
+}
+
+/* *********** Service part*************** */
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .item{
+    width: 32%;
+    padding: 30px 40px;
+    background: #fff;
+    box-shadow: -4px 18px 14px -8px rgba(0,0,0,1);
+    box-sizing: border-box;
+}
+
+.service h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px;
+
+}
+
+.service p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 374px;
+    color: #29313D;
+}
+
+ .title h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+ .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #29313D;
+    width: 449px;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.digital-life .box{
+    display: flex;
+
+}
+.digital-life .left{
+    width: 50%;
+    
+  
+
+}
+
+.digital-life .left img{
+    
+    width: 105%;
+    position: relative;
+    top: 34px;
+    right: -7px;
+}
+.digital-life .right{
+    width: 50%;
+    
+    background:url(../img/digitallifebg.png);
+   
+    background-size: cover;
+    padding: 100px 66px;
+
+}
+.digital-life .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #29313D;
+    width: 570px;
+
+}
+
+.digital-life .right p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 501px;
+    line-height: 200%;
+    color: #29313D;
+}
+
+
+/* .digital-life .button{
+    text-align: center;
+} */
+.digital-life .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: #fff;
+    margin-top: 10px;
+    transition: 1s;
+    
+
+}
+
+.work{
+    margin-top: 120px;
+    position: relative;
+}
+.work .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .box .title h2{
+    width: 693px;
+    margin-bottom: 60px;
+}
+
+
+.work .button{
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.work .button a{
+    display: inline-block;
+    background: transparent;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: #fff;
+    margin: 0 12px;
+    transition: 1s;
+    z-index:5 ;
+    color: #29313D;
+    border:1 px solid #29313D;
+    box-shadow: inset 0 0 0 1px #FF5538;
+
+}
+.work .button a:hover{ 
+    background: #FF5538;
+    color: #fff;
+   
+   
+}
+
+.work .small-item{
+    width: 40%;
+    
+    margin-bottom: 30px;
+    position: relative;
+}
+.work .small-item img{
+    width: 100%;
+    height: 458px;
+    
+}
+.work .large-item{
+    width: 58%;
+   
+    position: relative;
+    
+    margin-bottom: 30px;
+}
+.work .large-item img {
+    width: 100%;
+    height: 458px;
+    
+}
+
+
+.work .text-box{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    bottom: -123px;
+    left: 0;
+    box-shadow: -14px 33px 71px 19px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: 0.4s;
+}
+.work .text-box h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+
+}
+
+.work .text-box a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5538;
+    display: inline-block;
+}
+.work .small-item:hover .text-box{
+    bottom: 0;
+    opacity: 1;
+}
+.work .large-item:hover .text-box{
+    bottom: 0;
+    opacity: 1;
+}
+
+.postion-img{
+    position: absolute;
+    top: -300px;
+    left: -102px;
+    z-index: -5;
+
+}
+
+.counting{
+    background-color: #FDF9F8;
+    height: 500px;
+    padding: 120px;
+}
+
+.counting .box{
+    display: flex;
+}
+.counting .count{
+    width: 50%;
+   display: flex;
+ flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.counting .count .item{
+    width: 47%;
+    height: 200px;
+    background: #fff;
+    text-align: center;
+    padding: 74px 0;
+    box-sizing: border-box;
+}
+
+.counting .count .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.counting .count .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.counting .datiles{
+    width: 50%;
+    padding-left: 100px;
+    box-sizing: border-box;
+   
+}
+.counting .datiles h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    width: 570px;
+    line-height: 140%;
+    
+}
+.counting .datiles p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.counting .datiles .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: #fff;
+    margin: 0 12px;
+    transition: 1s;
+    
+
+}
+.counting .datiles .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    box-shadow: inset 0 0 0 1px #FF5538;
+}
+.global{
+    padding: 120px;
+}
+.global .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    width: 849px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    
+   
+}
+
+.global .box{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+
+}
+.global .box img{
+    margin-right: 10px;
+}
